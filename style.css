@@ -1,0 +1,84 @@
+:root {
+  --whiteColor: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+  --linkColor: hsl(228, 54%, 46%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background-color: var(--lightGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  background: var(--whiteColor);
+  padding: 15px;
+  width: 320px;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.card-body {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.card-body h4 {
+  color: var(--darkBlue);
+  font-size: 22px;
+}
+
+.card-body p {
+  color: var(--grayishBlue);
+  font-size: 15px;
+}
+
+.attribution {
+    margin-top: 30px;
+  font-size: 12px;
+}
+.attribution a {
+  color: var(--linkColor);
+}
